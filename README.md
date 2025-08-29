@@ -2,6 +2,8 @@
 
 **Kairo** is a retro inspired **to-do app** with customizable themes and practical features for easy task management.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Kairo-blue?style=for-the-badge)](https://f58igx-kodes.github.io/Mellow/)
+
 ## ✨ Features
 
 ### ✅ Task Management
