@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="https://img.icons8.com/liquid-glass/100/calendar.png">
+    <link rel="shortcut icon" type="x-icon" href="https://img.icons8.com/glyph-neue/128/FFFFFF/sugar-cube.png">
     <title>Kairo</title>
     <style>
         :root {
@@ -33,10 +33,10 @@
             --bg-secondary: #2c2c2e;
             --text-primary: #ffffff;
             --text-secondary: #8e8e93;
-            --border-light: #38383a;
-            --shadow-light: rgba(255, 255, 255, 0.08);
-            --shadow-medium: rgba(255, 255, 255, 0.12);
-            --shadow-heavy: rgba(255, 255, 255, 0.2);
+            --border-light: none;
+            --shadow-light: none;
+            --shadow-medium: none;
+            --shadow-heavy: none;
         }
 
         [data-theme="retro"] {
@@ -793,13 +793,15 @@
             border: 2px solid var(--border-light);
             border-radius: 50%;
             position: relative;
+            box-sizing: border-box;
         }
 
         .theme-radio.selected::after {
             content: '';
             position: absolute;
-            top: 3px;
-            left: 3px;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Offset by half the dot's size */
             width: 10px;
             height: 10px;
             background: var(--blue);
@@ -856,7 +858,7 @@
 
         @media (max-width: 768px) {
             body {
-                padding: 12px;
+                padding: 36px 12px 12px 12px;
             }
 
             .container {
